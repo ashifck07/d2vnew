@@ -4,12 +4,12 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const {checkFirebaseConnection} = require("./config/firebase");
 
-const architectRoutes = require("./Routes/architectRoutes");
-const leadRoutes = require("./Routes/leadRoutes");
+const architectRoutes = require("./routes/architectRoutes");
+const leadRoutes = require("./routes/leadRoutes");
 const designRoutes = require("./routes/designRoutes");
 const activityLogRoutes = require("./routes/activitylogRoute");
-const userRoutes = require("./Routes/userRoutes");
-const customerRoutes = require("./Routes/customerRoute");
+const userRoutes = require("./routes/userRoutes");
+const customerRoutes = require("./routes/customerRoute");
 
 const app = express();
 app.use(express.json()); // Parses incoming JSON requests
@@ -31,8 +31,8 @@ app.use("/designs", designRoutes);
 app.use("/activityLog", activityLogRoutes);
 app.use("/user", userRoutes);
 app.use("/customer", customerRoutes);
-app.use("/images", require("./Routes/imgRoute"));
-app.use("/workProgress", require("./Routes/workProgressRoute"));
+app.use("/images", require("./routes/imgRoute"));
+app.use("/workProgress", require("./routes/workProgressRoute"));
 
 const port = process.env.PORT || 5000;
 
