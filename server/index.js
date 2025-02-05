@@ -18,7 +18,7 @@ app.use(express.urlencoded({extended: true})); // Parses URL-encoded requests (o
 const cors = require("cors");
 app.use(
   cors({
-    origin: "http://3.111.39.17",
+    origin: "http://3.111.39.17:5000/api",
     // origin: ["http://localhost:3000", "http://your-production-domain.com"] ----- enable during production
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     allowedHeaders: ["Content-Type", "Authorization"],
