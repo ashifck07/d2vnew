@@ -1,0 +1,13 @@
+.gallerymobilesize{
+    display: none;
+    }
+    
+    @media screen and (max-width: 769px) {
+    
+        .gallerylapsize{
+            display: none;
+        }
+        .gallerymobilesize{
+            display:block;
+            }
+    }

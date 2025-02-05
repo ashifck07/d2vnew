@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #9968301a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #9968301a;
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.custom-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0px 20px;
+  overflow-x: hidden;
+}
+
+.invisible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer 10+ */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+.custom-input {
+  backdrop-filter: blur(40px);
+  box-shadow: 0px 4px 20px 0px #99683040;
+  background: linear-gradient(91.54deg, rgba(255, 255, 255, 0.4) 3.65%, rgba(255, 255, 255, 0.1) 100%);
+  box-shadow: 0px 4px 4px 0px #99683040;
+}
+.ant-upload-list-item {
+  padding: 5px !important;
+  background-color: #99683033;
+}
+.custom-pannel-input {
+  background: linear-gradient(91.54deg, rgba(255, 255, 255, 0.7) 3.65%, rgba(255, 255, 255, 0.5) 100%);
+  backdrop-filter: blur(40px);
+  box-shadow: 0px 4px 20px 0px #99683040;
+}
+.custom-ok-btn {
+  box-shadow: 0px 4px 4px 0px #99683066;
+  background: #ffffffcc;
+}
+.custom-portal-input {
+  backdrop-filter: blur(40px);
+  box-shadow: 0px 4px 20px 0px rgba(153, 104, 48, 0.25);
+  box-shadow: 0px 4px 4px 0px rgba(153, 104, 48, 0.25);
+}
+.custom-spinner {
+  color: #996830;
+  min-height: 100dvh;
+}
+.button-spinner {
+  color: white;
+}
+.ant-spin .ant-spin-dot-item {
+  width: 10px;
+  height: 10px;
+  background: #996830;
+}
+.ant-spin-nested-loading > div > .ant-spin .ant-spin-dot {
+  top: 40%;
+}
+.ant-spin-nested-loading > div > .ant-spin .ant-spin-text {
+  top: 40%;
+}
+/* custom step */
+
+.ant-steps-item-content > .ant-steps-item-title::after {
+  background-color: #996830 !important;
+  content: "" !important;
+  display: block;
+  border-top: 2px dotted #996830 !important;
+  height: 0;
+  margin-top: 5px;
+}
+.ant-steps-item-container[role="button"]:hover .ant-steps-item-icon {
+  border-color: #99683040 !important;
+}
+:where(.css-dev-only-do-not-override-49qm).ant-steps .ant-steps-item-icon .ant-steps-icon {
+  position: relative;
+  top: -0.5px;
+  color: white;
+  line-height: 1;
+}
+
+.custom-estimate-card h1,
+h2,
+h3,
+h4 {
+  font-size: 22px;
+}

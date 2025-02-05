@@ -1,0 +1,23 @@
+.custome-select {
+  /* padding: 12px; */
+  border-radius: 12px;
+  outline: none;
+  background: linear-gradient(91.54deg, rgba(255, 255, 255, 0.4) 3.65%, rgba(255, 255, 255, 0.1) 100%);
+  
+  color: #996830;
+  font-weight: 500;
+  /* font-size: 18px; */
+  backdrop-filter: blur(40px);
+  box-shadow: 0px 4px 4px 0px #99683040;
+  /* padding-right: 30px; */
+}
+/* .custome-select  div:hover{
+  background-color: rgba(0, 0, 0, 0.1);
+} */
+.custom-textarea{
+    padding: 25px 20px;
+    width: 100%;
+    border: 1px solid #996830;
+    background-color: #9968300D;
+    border-radius: 8px;
+}

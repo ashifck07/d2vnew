@@ -1,0 +1,55 @@
+
+/* custom step */
+/* Custom styling for the Ant Design Steps component */
+.custom-steps .ant-steps-item-icon {
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    font-size: 16px;
+    background-color: white; /* Default step background */
+    border: 2px solid #996830; /* Default step border color */
+    color: #996830; /* Default step text color */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .custom-steps .ant-steps-item-active .ant-steps-item-icon {
+    background-color: #996830; /* Active step background */
+    color: white; /* Active step text color */
+    border-color: #996830; /* Active step border color */
+  }
+  .ant-steps .ant-steps-item-finish .ant-steps-item-icon >.ant-steps-icon {
+    color: white; 
+}
+  .custom-steps .ant-steps-item-finish .ant-steps-item-icon  {
+    background-color: #996830; /* Completed step background */
+    color: white; /* Completed step text color */
+  }
+  
+  .custom-steps .ant-steps-item-title {
+    font-size: 14px; /* Title font size */
+  }
+  
+  .custom-steps .ant-steps-item {
+    flex: 1; /* Ensure equal spacing for all steps */
+  }
+  .ant-steps-item-content>.ant-steps-item-title::after {
+    background-color: #1677ff;
+}
+.ant-steps .ant-steps-item-title::after {
+  position: absolute;
+  top: 16px;
+  inset-inline-start: 100%;
+  display: block;
+  width: 9999px;
+  height: 1px;
+  background: rgba(5, 5, 5, 0.06);
+  content: "";
+}
+  .custom-steps .ant-steps-item-tail {
+    border-top: 2px dashed #996830 !important; /* Dashed line between steps */
+  }
+  
+  .custom-steps .ant-steps-item-finish .ant-steps-item-tail {
+    border-top: 2px dashed #996830; /* Dashed line for completed steps */
+  }
+  

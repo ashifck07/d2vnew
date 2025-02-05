@@ -1,0 +1,76 @@
+.container {
+  padding: 5px 50px;
+}
+.ant-header {
+  /* padding: 15px 50px; */
+  background: white;
+  height: unset;
+  display: flex;
+  justify-content: space-between;
+}
+.primary-btn ,.primary-btn:hover {
+  border: none;
+  background: #FFFFFF !important;
+  border-radius: 8px;
+  color: #996830 !important;
+  font-size: 16px;
+  font-weight: 400;
+  
+ 
+}
+.primary-btn-boarded {
+  border: 1.5px solid #996830;
+  border-radius: 8px;
+  color: #996830;
+  font-size: 16px;
+  font-weight: 500;
+}
+.primary-btn-active {
+  border: none;
+  background-color: #996830 !important ;
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+  
+  
+ 
+}
+.add-btn {
+  border: none;
+  background-color: #996830 !important ;
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+}
+.btn-logout {
+  padding: 19px 10px;
+  border-radius: 8px;
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+}
+body {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #9968301a;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #9968301a;
+    border-radius: 8px;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+@media screen and (max-width: 1024px){
+  .btn-logout{
+    display: none;
+  }
+}
